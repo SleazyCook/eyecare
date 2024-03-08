@@ -31,4 +31,5 @@ body {
     background-color: black;
     color: green;
     font-family: var(--font-sans);
+    position: relative;
 }

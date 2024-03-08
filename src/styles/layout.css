@@ -1,0 +1,77 @@
+/* Header */
+.header {
+    color: white;
+    display: flex;
+}
+
+.header__locations {
+    background-color: green;
+}
+
+.header__locations:first-of-type {
+    margin-right: 1rem;
+}
+
+.header__locations--city {
+    text-weight: bold;
+}
+
+.header__locations--details {
+    display: flex;
+    gap: 1rem;
+}
+
+.header__locations--city {
+    text-align: center;
+}
+
+.header__locations--phone,
+.header__locations--address {
+
+}
+
+.header__locations--phone {
+
+}
+
+.header__locations--address {
+
+}
+
+.header__locations--address span {
+    display: block;
+}
+
+/* Toolbar */
+.toolbar {
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 1rem 6rem;
+    font-family: var(--font-serif);
+}
+
+/* mainlinks + locations buttons */
+.toolbar__buttons,
+.toolbar__mainlinks {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.toolbar__mainlinks {
+
+}
+
+.toolbar__mainlinks--button {
+    color: red;
+    text-decoration: none;
+}
+
+/* Footer */
