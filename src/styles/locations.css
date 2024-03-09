@@ -21,10 +21,12 @@
     margin-left: 2rem;
     padding: 1rem;
     border-radius: 5px;
+    height: 65%;
 }
 
 .location-overview__header h1 {
     margin-bottom: 1rem;
+    position: relative;
 }
 
 .location-overview__header span {
@@ -42,10 +44,17 @@
 .location-overview__header--secondary img {
     margin-top: .5rem;
     height: 40px;
+    position: absolute;
+    top: 5rem;
+    left: 15rem;
 }
 
 .location-overview__header--secondary-livingston img {
     height: 60px;
+}
+
+.location-overview__hours {
+    margin-bottom: 1.5rem;
 }
 
 .location-overview__header--button,
@@ -54,8 +63,12 @@
     background-color: white; 
     color: black;
     padding: .3rem .75rem;
-    margin: .5rem;
     border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.location-overview__header--button:first-of-type {
+    margin-right: 1rem;
 }
 
 /* Office */

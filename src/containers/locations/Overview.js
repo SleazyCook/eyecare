@@ -1,5 +1,8 @@
 import { useLocation } from 'react-router-dom'
 
+import LivingstonHours from './LivingstonHours'
+import NewCaneyHours from './NewCaneyHours'
+
 function Overview() {
     const location = useLocation()
 
@@ -28,8 +31,20 @@ function Overview() {
                             :
                             <img src='https://i.imgur.com/SrV68sw.png' />
                         }
+                        <br />
                     </span>
                 </h1>
+                {/* Hours of Operation */}
+                <div className='location-overview__hours'>
+                    Hours of Operation:
+
+                    {location.pathname === '/locations/livingston' ?
+                        <LivingstonHours />
+                        :
+                        <NewCaneyHours />
+                    }
+
+                </div>
                 {/* Buttons */}
                 <a className='location-overview__header--button' 
                     href={location.pathname === '/locations/livingston' ? 
