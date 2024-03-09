@@ -1,0 +1,60 @@
+/* Overivew */
+.location-overview {
+    height: 70svh;
+    border: 2px solid white;
+    color: white;
+}
+
+.location-overview__livingston {
+    color: white;
+    background-image: url('https://i.imgur.com/loCXOMS.png');
+}
+
+.location-overview__new-caney {
+    background-image: url('https://i.imgur.com/KweTaJ4.png');
+}
+
+.location-overview__header {
+    background-color: rgba(0,0,0,.5);
+    width: 45%;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.location-overview__header h1 {
+    margin-bottom: 1rem;
+}
+
+.location-overview__header span {
+    display: block;
+}
+
+.location-overview__header--primary {
+    font-size: 3.5rem;
+}
+
+.location-overview__header--secondary {
+    font-size: 1rem;
+}
+
+.location-overview__header--secondary img {
+    margin-top: .5rem;
+    height: 40px;
+}
+
+.location-overview__header--secondary-livingston img {
+    height: 60px;
+}
+
+.location-overview__header--button,
+.location-overview__header--button:visited,
+.location-overview__header-button:active {
+    background-color: white; 
+    color: black;
+    padding: .3rem .75rem;
+    margin: .5rem;
+    border-radius: 10px;
+}
+
