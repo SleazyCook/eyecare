@@ -41,7 +41,7 @@ function NewCaneyHours() {
                 </tr>
                 <tr>
                     <td>Sunday</td>
-                    <td>12PM</td>
+                    <td>12 PM</td>
                     <td>4 PM</td>
                 </tr>
 

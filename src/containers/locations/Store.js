@@ -13,7 +13,9 @@ function Store() {
                 <>Walmart Vision Center</>
                 :
                 <>
-                Target Optical
+                <span id='target'>TARGET OPTICAL	
+                    <span id='registered'>&#174;</span>
+                </span>
                 </>
                 
                 }
