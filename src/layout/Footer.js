@@ -1,6 +1,8 @@
 function Footer() {
     return(
-        <div>Developed by Drewford</div>
+        <div>Developed by Drewford
+
+        </div>
     )
 }
 

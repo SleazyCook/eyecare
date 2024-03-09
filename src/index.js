@@ -7,8 +7,8 @@ import ErrorPage from './containers/ErrorPage'
 import Home from './containers/Home'
 import Insurance from './containers/Insurance'
 import Services from './containers/Services'
-import Livingston from './containers/Livingston'
-import NewCaney from './containers/NewCaney'
+import Livingston from './containers/locations/Livingston'
+import NewCaney from './containers/locations/NewCaney'
 
 const appElement = document.getElementById('app')
 const root = createRoot(appElement)

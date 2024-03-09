@@ -1,7 +1,9 @@
+import Location from "./Location";
+
 function Livingston(){
     return(
         <div>
-            Livingston - Walmart Optical
+            <Location />
         </div>
     )
 }
