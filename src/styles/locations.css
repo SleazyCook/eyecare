@@ -84,12 +84,17 @@
     font-family: 'Helvetica';
 }
 
-#target-logo {
+#target-logo,
+#walmart-logo {
     position: absolute;
     z-index: 5;
     height: 80svh;
     left: -22rem;
-    
+}
+
+#walmart-logo {
+    height: 90svh;
+    top: -2.75rem;
 }
 
 .shop h2 {
@@ -98,6 +103,10 @@
     margin-top: 2rem;
     z-index: 10;
     position: relative;
+}
+
+#walmart {
+    color: var(--color-walmart-blue);
 }
 
 #target {
@@ -154,11 +163,19 @@
 }
 
 .shop__photo:hover {
-    outline: 1rem solid var(--color-target);
+
     border-radius: 1rem;
     transform: scale(1.05) translateY(-.5rem);
     box-shadow: 0 2.5rem 4rem black;
     z-index: 20;
+}
+
+.shop__photo--target:hover {
+    outline: 1rem solid var(--color-target);
+}
+
+.shop__photo--walmart:hover {
+    outline: 1rem solid var(--color-walmart-blue);
 }
 
 .shop__details {
@@ -174,6 +191,11 @@
 
 .shop__insurance-icons {
 
+}
+
+#walmart-icons {
+    height: 80px;
+    margin-bottom: 2rem;
 }
 
 .shop__insurance-icons img {
@@ -210,4 +232,12 @@
     display: inline-block;
     margin-top: 1rem;
     font-size: 1.3rem;
+}
+
+.shop__button--target {
+    background-color: var(--color-target);
+}
+
+.shop__button--walmart {
+    background-color: var(--color-walmart-blue);
 }
