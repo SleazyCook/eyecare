@@ -58,3 +58,118 @@
     border-radius: 10px;
 }
 
+/* Office */
+
+/* Shop */
+
+.shop {
+    background-color: white;
+    height: 80svh;
+    color: black;
+    border: 2px solid white;
+}
+
+.shop h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+.shop__flexbox {
+    display: flex;
+    padding-top: 5rem;
+}
+
+.shop__photos {
+    height: 10rem;
+    border: 2px solid white;
+    width: 50%;
+    margin-left: 3rem;
+}
+
+.shop__composition {
+    position: relative;
+}
+
+.shop__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 1.5rem black;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 1rem;
+}
+
+.shop__photo--1 {
+    left: 0;
+    top: -2rem;
+}
+
+.shop__photo--2 {
+    right: 0;
+    top: 2rem;
+}
+
+.shop__photo--3 {
+    left: 20%;
+    top: 10rem;
+}
+
+.shop__photo:hover {
+    outline: 1rem solid var(--color-target);
+    border-radius: 1rem;
+    transform: scale(1.05) translateY(-.5rem);
+    box-shadow: 0 2.5rem 4rem black;
+    z-index: 20;
+}
+
+.shop__details {
+    text-align: center;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.shop__details h3 {
+    font-size: 1.3rem;
+}
+
+.shop__insurance-icons {
+
+}
+
+.shop__insurance-icons img {
+    max-height: 20px;
+    margin: .2rem;
+}
+
+.shop__brand-icons {
+    text-align: center;
+}
+
+.shop__brand-icons img {
+    height: 50px; 
+    margin: .2rem;   
+}
+
+#ray-ban {
+    height: 60px;
+}
+
+#oakley {
+    height: 40px;
+}
+
+#emporio {
+    height: 60px;
+}
+
+.shop__button {
+    background-color: var(--color-target);
+    padding: .5rem 1rem;
+    color: white;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
