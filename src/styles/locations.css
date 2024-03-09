@@ -67,12 +67,24 @@
     height: 80svh;
     color: black;
     border: 2px solid white;
+    position: relative;
+    font-family: 'Helvetica';
+}
+
+#target-logo {
+    position: absolute;
+    z-index: 5;
+    height: 80svh;
+    left: -22rem;
+    
 }
 
 .shop h2 {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-top: 2rem;
+    z-index: 10;
+    position: relative;
 }
 
 .shop__flexbox {
@@ -132,6 +144,7 @@
 
 .shop__details h3 {
     font-size: 1.3rem;
+    margin-bottom: .5rem;
 }
 
 .shop__insurance-icons {

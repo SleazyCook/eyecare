@@ -5,6 +5,7 @@ function Store() {
 
     return(
         <div className='shop'>
+            <img id='target-logo' src='https://i.imgur.com/zOp1Bu2.png' />
             <h2>
                 Glasses & Contacts from&nbsp;
                 {location.pathname === '/locations/livingston' ?
