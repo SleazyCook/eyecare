@@ -17,8 +17,7 @@ function Overview() {
 
             {/* Text Area */}
             <div className='location-overview__header'>
-                {/* Flexbox*/}
-                <div>
+
                     {/* Contact Info */}
                     <h1>
                         <span className='location-overview__header--primary'>
@@ -44,9 +43,11 @@ function Overview() {
                     <div>
                         <IoLocationOutline />&nbsp;
                             {location.pathname === '/locations/livingston' ?
-                                <>1618 W Church St <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Livingston, TX 77351</>
+                                <>1618 W Church St <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Livingston, TX 77351</>
                                 :
-                                <>21836 Market Pl Dr <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Caney, TX 77357</>}
+                                <>21836 Market Pl Dr <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    New Caney, TX 77357</>}
                         <br />
                         <HiOutlinePhone />&nbsp;
                             {location.pathname === '/locations/livingston' ?
@@ -58,22 +59,11 @@ function Overview() {
                             {location.pathname === '/locations/livingston' ?
                                 <>(936) 327-0033</>
                                 :
-                                <>(555) 555-5555</>}
+                                <>(832) 432-6170</>}
                     </div>
-                </div>
 
 
-                {/* Hours of Operation */}
-                <div className='location-overview__hours'>
-                    Hours of Operation:
 
-                    {location.pathname === '/locations/livingston' ?
-                        <LivingstonHours />
-                        :
-                        <NewCaneyHours />
-                    }
-
-                </div>
                     
             </div>
 

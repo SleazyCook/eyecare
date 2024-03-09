@@ -29,10 +29,10 @@
     padding: 1rem;
     border-radius: 5px;
     /* height: 65%; */
-    display: flex;
+    /* display: flex;
     gap: 3rem;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
 }
 
@@ -90,19 +90,68 @@
 
 /* Office */
 .office {
-    background-color: grey;
+    background-color: lightgrey;
     height: 80svh;
     color: black;
-    border: 2px solid grey;
+    border: 2px solid lightgrey;
     position: relative;
     font-family: 'Helvetica';
 }
 
+#glasses-logo {
+    position: absolute;
+    z-index: 5;
+    height: 60svh;
+    left: -20rem;
+    top: 5rem;
+    opacity: 40%;
+}
+
+.office h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    z-index: 10;
+    position: relative;
+}
+
+.office__street {
+    color: #636363;
+}
+
+.office__flexbox {
+    display: flex;
+    padding-top: 5rem;
+    justify-content: space-around;
+}
+
+.office__details {
+
+}
+
+.office__details h3 {
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+
+.office__hours {
+    z-index: 10;
+    position: relative;
+}
+.office__schedule-button {
+    background-color: white;
+    color: black;
+    padding: .3rem .75rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
 /* photos styles in Shop section below */
 
-#office-photos {
+/* #office-photos {
     border: 2px solid grey;
-}
+} */
 
 .shop__photo--office:hover {
     outline: 1rem solid white;
@@ -163,7 +212,6 @@
 
 .shop__photos {
     height: 10rem;
-    border: 2px solid white;
     width: 50%;
     margin-left: 3rem;
 }
