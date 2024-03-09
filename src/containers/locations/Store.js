@@ -37,10 +37,10 @@ function Store() {
                                 src='https://i.imgur.com/V7TMXH9.png'
                                 alt='Walmart Vision Center logo' />
                             <img className='shop__photo shop__photo--2 shop__photo--walmart'
-                                src='https://i.imgur.com/qi8lWer.png'
+                                src='https://i.imgur.com/aEAqRjh.png'
                                 alt='Walmart Vision Center storefront alt' />
                             <img className='shop__photo shop__photo--3 shop__photo--walmart'
-                                src='https://i.imgur.com/aEAqRjh.png'
+                                src='https://i.imgur.com/qi8lWer.png'
                                 alt='Walmart vison center storefront' />
                         </div>
                         :    
@@ -55,15 +55,19 @@ function Store() {
                                 src='https://i.imgur.com/sBnAHJN.jpg'
                                 alt='Target Optical Team photo 2' />
                     </div>
-                        }
-
+                    }
                 </div>
                 {/* Shop Details */}
                 {location.pathname === '/locations/livingston' ?
                     // Walmart Details
                     <div className='shop__details'>
-                        <h3>Designer Finds: Names you know & looks you love</h3>
-                        <img id='walmart-icons' alt='Calvin Klein, DKNY, Nike, Colombia' src='https://i.imgur.com/XdKoANk.png' />
+                        <h3>Names you know & looks you love</h3>
+                        <div className='shop__brand-icons'>
+                            <img alt='Calvin Klein' src='https://i.imgur.com/be9lEvs.png' />
+                            <img alt='DKNY' id='dkny' src='https://i.imgur.com/uRIZNeD.png' />
+                            <img alt='Nike' id='nike' src='https://i.imgur.com/BrqGCCY.png' />
+                            <img alt='Colombia' src='https://i.imgur.com/xJkNPAP.png' />
+                        </div>
                         <h3>Insurance accepted in store only</h3>
                         <a className='shop__button shop__button--walmart' href='https://www.walmart.com/cp/vision-centers/1078944' target='_blank'>Shop Now</a>        
                     </div>

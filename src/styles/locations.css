@@ -1,27 +1,39 @@
 /* Overivew */
 .location-overview {
-    height: 70svh;
-    border: 2px solid white;
+    height: 35svh;
+    border: 2px solid black;
     color: white;
 }
 
 .location-overview__livingston {
     color: white;
     background-image: url('https://i.imgur.com/loCXOMS.png');
+    background: black;
 }
 
 .location-overview__new-caney {
     background-image: url('https://i.imgur.com/KweTaJ4.png');
+    background: black;
+}
+
+.location-overview__flexbox {
+    display: flex;
 }
 
 .location-overview__header {
     background-color: rgba(0,0,0,.5);
-    width: 45%;
-    margin-top: 5rem;
-    margin-left: 2rem;
+    /* width: ; */
+    /* margin-top: 5rem;
+    margin-left: 2rem; */
+    margin: 0rem 2rem;
     padding: 1rem;
     border-radius: 5px;
-    height: 65%;
+    /* height: 65%; */
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .location-overview__header h1 {
@@ -39,22 +51,27 @@
 
 .location-overview__header--secondary {
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
 }
 
 .location-overview__header--secondary img {
     margin-top: .5rem;
+    margin-left: .5rem;
     height: 40px;
-    position: absolute;
+    /* position: absolute;
     top: 5rem;
-    left: 15rem;
-}
-
-.location-overview__header--secondary-livingston img {
-    height: 60px;
+    left: 15rem; */
 }
 
 .location-overview__hours {
-    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.location-overview__button-box {
+    text-align: center;
+    margin-top: .5rem;
 }
 
 .location-overview__header--button,
@@ -72,6 +89,24 @@
 }
 
 /* Office */
+.office {
+    background-color: grey;
+    height: 80svh;
+    color: black;
+    border: 2px solid grey;
+    position: relative;
+    font-family: 'Helvetica';
+}
+
+/* photos styles in Shop section below */
+
+#office-photos {
+    border: 2px solid grey;
+}
+
+.shop__photo--office:hover {
+    outline: 1rem solid white;
+}
 
 /* Shop */
 
@@ -181,7 +216,10 @@
 .shop__details {
     text-align: center;
     margin: auto;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    border: 5px solid lightgrey;
+    padding: 2rem 1rem;
+    border-radius: 5px;
 }
 
 .shop__details h3 {
@@ -194,8 +232,9 @@
 }
 
 #walmart-icons {
-    height: 80px;
+    height: 70px;
     margin-bottom: 2rem;
+    border-radius: 10px;
 }
 
 .shop__insurance-icons img {
@@ -210,6 +249,11 @@
 .shop__brand-icons img {
     height: 50px; 
     margin: .2rem;   
+}
+
+#dkny,
+#nike {
+    height: 45px;
 }
 
 #ray-ban {

@@ -46,6 +46,7 @@
 .toolbar {
     background-color: black;
     position: sticky;
+    z-index: 1000;
     top: 0px;
     width: 100%;
     display: flex;

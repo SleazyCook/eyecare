@@ -1,5 +1,9 @@
 import { useLocation } from 'react-router-dom'
 
+import { IoLocationOutline } from "react-icons/io5";
+import { HiOutlinePhone } from "react-icons/hi";
+import { LiaFaxSolid } from "react-icons/lia";
+
 import LivingstonHours from './LivingstonHours'
 import NewCaneyHours from './NewCaneyHours'
 
@@ -13,27 +17,52 @@ function Overview() {
 
             {/* Text Area */}
             <div className='location-overview__header'>
-                {/* Header Text */}
-                <h1>
-                    <span className='location-overview__header--primary'>
-                        {location.pathname === '/locations/livingston' ?
-                            <>Livingston Office</>
-                            :
-                            <>New Caney Office</>
-                        }
-                    </span>
-                    <span className={location.pathname === '/locations/livingston' ? 
-                        'location-overview__header--secondary location-overview__header--secondary-livingston' : 
-                        'location-overview__header--secondary location-overview__header--secondary-new-caney'}>
-                        {/* Partnered with &nbsp; */}
-                        {location.pathname === '/locations/livingston' ?
-                            <img src='https://i.imgur.com/3b6WWwS.png' />
-                            :
-                            <img src='https://i.imgur.com/SrV68sw.png' />
-                        }
+                {/* Flexbox*/}
+                <div>
+                    {/* Contact Info */}
+                    <h1>
+                        <span className='location-overview__header--primary'>
+                            {location.pathname === '/locations/livingston' ?
+                                <>Livingston Office</>
+                                :
+                                <>New Caney Office</>
+                            }
+                        </span>
+                        <div className={location.pathname === '/locations/livingston' ? 
+                            'location-overview__header--secondary location-overview__header--secondary-livingston' : 
+                            'location-overview__header--secondary location-overview__header--secondary-new-caney'}>
+                            <span>Partnered with </span> &nbsp; 
+                            {location.pathname === '/locations/livingston' ?
+                                <img src='https://i.imgur.com/3b6WWwS.png' />
+                                :
+                                <img src='https://i.imgur.com/SrV68sw.png' />
+                            }
+                            <br />
+                        </div>
+                    </h1>
+                    {/* Address, Phone, Fax */}
+                    <div>
+                        <IoLocationOutline />&nbsp;
+                            {location.pathname === '/locations/livingston' ?
+                                <>1618 W Church St <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Livingston, TX 77351</>
+                                :
+                                <>21836 Market Pl Dr <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Caney, TX 77357</>}
                         <br />
-                    </span>
-                </h1>
+                        <HiOutlinePhone />&nbsp;
+                            {location.pathname === '/locations/livingston' ?
+                                <>(936) 327-0021</>
+                                :
+                                <>(832) 432-6171</>}
+                        <br />
+                        <LiaFaxSolid />&nbsp;
+                            {location.pathname === '/locations/livingston' ?
+                                <>(936) 327-0033</>
+                                :
+                                <>(555) 555-5555</>}
+                    </div>
+                </div>
+
+
                 {/* Hours of Operation */}
                 <div className='location-overview__hours'>
                     Hours of Operation:
@@ -45,7 +74,11 @@ function Overview() {
                     }
 
                 </div>
-                {/* Buttons */}
+                    
+            </div>
+
+            {/* Buttons */}
+            <div className='location-overview__button-box'>
                 <a className='location-overview__header--button' 
                     href={location.pathname === '/locations/livingston' ? 
                         'https://drewford.dev' 
@@ -57,8 +90,9 @@ function Overview() {
                         'https://www.google.com/maps/place/Walmart+Supercenter/@30.7159202,-94.9575004,17z/data=!3m1!4b1!4m6!3m5!1s0x86388698b08d0d17:0x8cc402e4d5031f7e!8m2!3d30.7159156!4d-94.9549255!16s%2Fg%2F11bxbb1nls?entry=ttu' 
                         :'https://www.google.com/maps/place/Target+Optical/@30.1332134,-95.2356684,17z/data=!3m1!4b1!4m6!3m5!1s0x86474d9a671ddbfd:0xba677e390abf74d6!8m2!3d30.1332134!4d-95.2330935!16s%2Fg%2F11l2v2d8qz?entry=ttu'} target='_blank'>
                     Directions
-                </a>    
-            </div>
+                </a>   
+            </div> 
+            
 
         </div>
     )
