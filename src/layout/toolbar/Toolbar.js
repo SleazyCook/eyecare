@@ -1,22 +1,16 @@
+
 import { Link } from 'react-router-dom'
 
-import MainLinks from './MainLinks';
+import MainLinks from './MainLinks'
+import Locations from './Locations'
+import ScheduleAppt from './ScheduleAppt';
 
 function Toolbar() {
     return(
         <div className='toolbar'>
-
-            <div className='toolbar__buttons'>
-                <MainLinks />
-
-                <div>Locations</div>
-                {/* dropdown icon */}
-                {/* animated popup to choose livingston or new caney */}
-
-                <div>Schedule Appointment</div>
-                {/* dropdown icon */}
-                {/* animated popup to choose livingston or new caney */}
-            </div>
+            <MainLinks />
+            <Locations />
+            <ScheduleAppt />
         </div>
     )
 }

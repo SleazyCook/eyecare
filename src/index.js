@@ -32,11 +32,11 @@ export const router = createBrowserRouter([
                 element: <Services />
             },
             {
-                path: 'livingston',
+                path: 'locations/livingston',
                 element: <Livingston />
             },
             {
-                path: 'newcaney',
+                path: 'locations/new-caney',
                 element: <NewCaney />
             }
         ]
