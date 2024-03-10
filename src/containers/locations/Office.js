@@ -1,5 +1,8 @@
 import { useLocation, Link  } from 'react-router-dom'
 
+import { FaArrowRight } from "react-icons/fa6";
+
+
 import LivingstonHours from './LivingstonHours';
 import NewCaneyHours from './NewCaneyHours';
 
@@ -23,9 +26,11 @@ function Office() {
                     <h3>
                         Serving all of your optical needs
                     </h3>
-                    <Link to='/services'>All Services</Link>
+                    <Link to='/services'>All Services <FaArrowRight />
+                        </Link>
                     <br />
-                    <Link to='/insurance'>Accepted Insurance</Link>
+                    <Link to='/insurance'>Accepted Insurance <FaArrowRight />
+                        </Link>
                     <h3>
                         Appointments and Walk-In's welcome
                     </h3>
@@ -36,7 +41,7 @@ function Office() {
                         {location.pathname === '/locations/livingston' ?
                             <>
                                 <LivingstonHours />
-                                <a className='office__schedule-button' 
+                                <a id='office__schedule-button' 
                                     href={location.pathname === '/locations/livingston' ? 
                                         'https://drewford.dev' 
                                         :'https://drewford.dev'} target='_blank'>
@@ -46,7 +51,7 @@ function Office() {
                             :
                             <>
                                 <NewCaneyHours />
-                                <a className='office__schedule-button' 
+                                <a id='office__schedule-button' 
                                     href={location.pathname === '/locations/livingston' ? 
                                         'https://drewford.dev' 
                                         :'https://drewford.dev'} target='_blank'>
