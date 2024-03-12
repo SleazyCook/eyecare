@@ -4,7 +4,7 @@ function Form() {
     const location = useLocation()
 
     return(
-        <div>
+        <div className='form'>
 
             Reach out to &nbsp;
             {location.pathname === '/locations/livingston' ?

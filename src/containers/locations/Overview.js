@@ -22,44 +22,39 @@ function Overview() {
                     <h1>
                         <span className='location-overview__header--primary'>
                             {location.pathname === '/locations/livingston' ?
-                                <>Livingston Office</>
+                                <>Livingston</>
                                 :
-                                <>New Caney Office</>
+                                <>New Caney</>
                             }
                         </span>
-                        <div className={location.pathname === '/locations/livingston' ? 
+                        <span>&nbsp; x &nbsp;</span>
+                        <span className={location.pathname === '/locations/livingston' ? 
                             'location-overview__header--secondary location-overview__header--secondary-livingston' : 
                             'location-overview__header--secondary location-overview__header--secondary-new-caney'}>
-                            <span>Partnered with </span> &nbsp; 
                             {location.pathname === '/locations/livingston' ?
                                 <img src='https://i.imgur.com/3b6WWwS.png' />
                                 :
                                 <img src='https://i.imgur.com/SrV68sw.png' />
                             }
                             <br />
-                        </div>
+                        </span>
                     </h1>
-                    {/* Address, Phone, Fax */}
-                    <div>
-                        <IoLocationOutline />&nbsp;
-                            {location.pathname === '/locations/livingston' ?
-                                <>1618 W Church St <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    Livingston, TX 77351</>
-                                :
-                                <>21836 Market Pl Dr <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    New Caney, TX 77357</>}
-                        <br />
+                    {/* Phone, Fax */}
+                    <div className='location-overview__flexbox'>
+                        <div className='location-overview__icon-number'>
                         <HiOutlinePhone />&nbsp;
                             {location.pathname === '/locations/livingston' ?
                                 <>(936) 327-0021</>
                                 :
                                 <>(832) 432-6171</>}
-                        <br />
+                        </div>
+                        <div className='location-overview__icon-number'>
                         <LiaFaxSolid />&nbsp;
                             {location.pathname === '/locations/livingston' ?
                                 <>(936) 327-0033</>
                                 :
                                 <>(832) 432-6170</>}
+                        </div>
                     </div>
 
 

@@ -13,7 +13,7 @@
 }
 
 .header__locations--city {
-    text-weight: bold;
+    font-weight: bold;
 }
 
 .header__locations--details {
@@ -128,3 +128,23 @@ a {
 }
 
 /* Footer */
+.footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer a {
+    color: white;
+    display: block;
+    margin-top: .5rem;
+}
+
+#developed-by {
+    font-family:'Times New Roman', Times, serif;
+}
+
+#author {
+    font-family: 'Berkshire Swash'
+}

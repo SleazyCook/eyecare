@@ -5,6 +5,12 @@
     color: white;
 }
 
+@media (max-width: 1250px) {
+    .location-overview {
+        height: 42.5svh;
+    }
+  }
+
 .location-overview__livingston {
     color: white;
     background-image: url('https://i.imgur.com/loCXOMS.png');
@@ -18,31 +24,36 @@
 
 .location-overview__flexbox {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.location-overview__icon-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .location-overview__header {
     background-color: rgba(0,0,0,.5);
-    /* width: ; */
-    /* margin-top: 5rem;
-    margin-left: 2rem; */
     margin: 0rem 2rem;
     padding: 1rem;
     border-radius: 5px;
-    /* height: 65%; */
-    /* display: flex;
-    gap: 3rem;
-    justify-content: center;
-    align-items: center; */
+    text-align: center;
 
 }
 
 .location-overview__header h1 {
     margin-bottom: 1rem;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .location-overview__header span {
-    display: block;
+    display: inline-block;
 }
 
 .location-overview__header--primary {
@@ -53,6 +64,7 @@
     font-size: 1rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     /* justify-content: flex-end; */
 }
 
@@ -98,6 +110,12 @@
     font-family: 'Helvetica';
 }
 
+@media (max-width: 1250px) {
+    .office {
+        height: 100svh;
+    }
+  }
+
 #glasses-logo {
     position: absolute;
     z-index: 5;
@@ -129,6 +147,7 @@
     position: relative;
     z-index: 10;
     font-size: 1.1rem;
+    margin-left: 2rem;
 }
 
 .office__details h3 {
@@ -164,10 +183,6 @@
 
 /* photos styles in Shop section below */
 
-/* #office-photos {
-    border: 2px solid grey;
-} */
-
 .shop__photo--office:hover {
     outline: 1rem solid white;
 }
@@ -183,6 +198,12 @@
     font-family: 'Helvetica';
 }
 
+@media (max-width: 1250px) {
+    .shop {
+        height: 100svh;
+    }
+  }
+
 #target-logo,
 #walmart-logo {
     position: absolute;
@@ -195,6 +216,14 @@
     height: 90svh;
     top: -2.75rem;
 }
+
+@media (max-width: 1250px) {
+    #target-logo,
+    #walmart-logo {
+        top: 3rem;
+        left: -15rem;
+        }
+  }
 
 .shop h2 {
     text-align: center;
@@ -230,6 +259,12 @@
     width: 50%;
     margin-left: 3rem;
 }
+
+@media (max-width: 1250px) {
+    .shop__photos {
+        width: 45%;
+    }
+  }
 
 .shop__composition {
     position: relative;
@@ -347,4 +382,12 @@
 
 .shop__button--walmart {
     background-color: var(--color-walmart-blue);
+}
+
+/* Contact Form */
+
+.form {
+    height: 70svh;
+    background-color: lightgrey;
+    color: white;
 }
