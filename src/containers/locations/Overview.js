@@ -1,11 +1,7 @@
 import { useLocation } from 'react-router-dom'
 
-import { IoLocationOutline } from "react-icons/io5";
 import { HiOutlinePhone } from "react-icons/hi";
 import { LiaFaxSolid } from "react-icons/lia";
-
-import LivingstonHours from './LivingstonHours'
-import NewCaneyHours from './NewCaneyHours'
 
 function Overview() {
     const location = useLocation()

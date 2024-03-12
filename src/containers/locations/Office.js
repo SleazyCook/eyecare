@@ -2,7 +2,6 @@ import { useLocation, Link  } from 'react-router-dom'
 
 import { FaArrowRight } from "react-icons/fa6";
 
-
 import LivingstonHours from './LivingstonHours';
 import NewCaneyHours from './NewCaneyHours';
 
@@ -26,22 +25,23 @@ function Office() {
                     <h3>
                         Serving all of your optical needs
                     </h3>
-                    <Link to='/services'>All Services <FaArrowRight />
+                    <Link className='button__office-redirect' to='/services'>All Services&nbsp;<FaArrowRight />
                         </Link>
                     <br />
-                    <Link to='/insurance'>Accepted Insurance <FaArrowRight />
+                    <Link className='button__office-redirect' to='/insurance'>Accepted Insurance&nbsp;<FaArrowRight />
                         </Link>
                     <h3>
                         Appointments and Walk-In's welcome
                     </h3>
+                    <span id='office__divider'></span>
                     {/* Hours of Operation */}
                     <div className='office__hours'>
-                        Hours of Operation:
+                        <h3>Hours of Operation:</h3>
 
                         {location.pathname === '/locations/livingston' ?
                             <>
                                 <LivingstonHours />
-                                <a id='office__schedule-button' 
+                                <a className='button__office-schedule' 
                                     href={location.pathname === '/locations/livingston' ? 
                                         'https://drewford.dev' 
                                         :'https://drewford.dev'} target='_blank'>
@@ -51,7 +51,7 @@ function Office() {
                             :
                             <>
                                 <NewCaneyHours />
-                                <a id='office__schedule-button' 
+                                <a className='button__office-schedule' 
                                     href={location.pathname === '/locations/livingston' ? 
                                         'https://drewford.dev' 
                                         :'https://drewford.dev'} target='_blank'>
@@ -84,7 +84,7 @@ function Office() {
                                     src='https://i.imgur.com/Oswb3RZ.png'
                                     alt='New Caney Exam Room' />
                                 <img className='shop__photo shop__photo--2 shop__photo--office'
-                                    src='https://i.imgur.com/wZICBLk.png'
+                                    src='https://i.imgur.com/d6lLewd.jpg'
                                     alt='New Caney lobby' />
                                 <img className='shop__photo shop__photo--3 shop__photo--office'
                                     src='https://i.imgur.com/S2E2FyH.png'
