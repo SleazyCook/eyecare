@@ -317,6 +317,7 @@
     margin-top: 1rem;
     border: 5px solid lightgrey;
     padding: 2rem 1rem;
+    padding-bottom: 5rem;
     border-radius: 5px;
 }
 
@@ -325,9 +326,9 @@
     margin-bottom: .5rem;
 }
 
-.shop__insurance-icons {
+/* .shop__insurance-icons {
 
-}
+} */
 
 #walmart-icons {
     height: 70px;

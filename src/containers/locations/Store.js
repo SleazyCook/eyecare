@@ -69,7 +69,9 @@ function Store() {
                             <img alt='Colombia' src='https://i.imgur.com/xJkNPAP.png' />
                         </div>
                         <h3>Insurance accepted in store only</h3>
-                        <a className='shop__button shop__button--walmart' href='https://www.walmart.com/cp/vision-centers/1078944' target='_blank'>Shop Now</a>        
+                        <div className='button__box'>
+                            <a className='button__shop button__shop--walmart' href='https://www.walmart.com/cp/vision-centers/1078944' target='_blank'>Shop Now</a>        
+                        </div>
                     </div>
                     :
                     // Target Details
@@ -101,8 +103,10 @@ function Store() {
                             <img alt='ralph lauren eyewear' src='https://i.imgur.com/veozWUB.png' />
                         </div>
 
-                        <a className='shop__button shop-button--target' href='https://local.targetoptical.com/tx/new-caney/21836-market-place-dr.html' target='_blank'>Shop Now</a>        
-                    
+                        <div className='button__box'>
+                            <a className='button__shop button__shop--target' href='https://local.targetoptical.com/tx/new-caney/21836-market-place-dr.html' target='_blank'>Shop Now</a>        
+                        </div>
+
                     </div>
                 }
             </div>
