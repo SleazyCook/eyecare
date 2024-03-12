@@ -81,18 +81,12 @@
 /* Office */
 .office {
     background-color: lightgrey;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
     color: black;
     border: 2px solid lightgrey;
     position: relative;
     font-family: 'Helvetica';
 }
-
-@media (max-width: 1250px) {
-    .office {
-        height: 100svh;
-    }
-  }
 
 #glasses-logo {
     position: absolute;
