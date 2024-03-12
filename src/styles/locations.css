@@ -1,15 +1,9 @@
 /* Overivew */
 .location-overview {
-    height: 35svh;
     border: 2px solid black;
     color: white;
+    padding-bottom: 2rem;
 }
-
-@media (max-width: 1250px) {
-    .location-overview {
-        height: 42.5svh;
-    }
-  }
 
 .location-overview__livingston {
     color: white;
@@ -27,6 +21,7 @@
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    margin-top: -1rem;
 }
 
 .location-overview__icon-number {
@@ -50,6 +45,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: normal;
+    font-family: var(--font-title);
 }
 
 .location-overview__header span {
@@ -60,21 +57,16 @@
     font-size: 3.5rem;
 }
 
-.location-overview__header--secondary {
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* justify-content: flex-end; */
+.location-overview__header--x {
+    font-size: 2rem;
+    margin-right: -.25rem;
 }
 
 .location-overview__header--secondary img {
     margin-top: .5rem;
     margin-left: .5rem;
-    height: 40px;
-    /* position: absolute;
-    top: 5rem;
-    left: 15rem; */
+    height: 45px;
+    margin-bottom: .4rem;
 }
 
 .location-overview__hours {
@@ -84,20 +76,6 @@
 .location-overview__button-box {
     text-align: center;
     margin-top: .5rem;
-}
-
-.location-overview__header--button,
-.location-overview__header--button:visited,
-.location-overview__header-button:active {
-    background-color: white; 
-    color: black;
-    padding: .3rem .75rem;
-    border-radius: 10px;
-    margin-top: 1rem;
-}
-
-.location-overview__header--button:first-of-type {
-    margin-right: 1rem;
 }
 
 /* Office */
@@ -388,7 +366,8 @@
 /* Contact Form */
 
 .form-container {
-    background-color: lightgrey;
+    background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(20, 25, 20, 0.5)),
+                  url('https://i.imgur.com/Zd0WX8H.png');
     color: white;
     display: flex;
     flex-direction: column;
