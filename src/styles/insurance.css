@@ -1,0 +1,25 @@
+.insurance {
+    color: white;
+    background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(20, 25, 20, 0.5)),
+        url('https://i.imgur.com/Zd0WX8H.png');
+}
+
+.insurance__header {
+    font-family: var(--font-title);
+    text-align: center;
+    color: white;
+    padding: 1rem 0 2rem 0;
+}
+
+.insurance__header span {
+    display: block;
+}
+
+.insurance__header--primary {
+    font-size: 5rem;
+    letter-spacing: 5px;
+}
+
+.insurance__header--secondary {
+    font-size: 2rem;
+}
