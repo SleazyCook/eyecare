@@ -38,3 +38,8 @@ body {
     font-family: var(--font-sans);
     position: relative;
 }
+
+/* utilities */
+.center-text {
+    text-align: center;
+}

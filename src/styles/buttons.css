@@ -1,3 +1,11 @@
+/* Home Reviews */
+.button__review-link {
+  border: 2px solid black;
+  padding: .25rem .5rem;
+  border-radius: 5px;
+  font-size: 1.25rem;
+}
+
 /* Location Overview */
 
 .button-box__location-overview {

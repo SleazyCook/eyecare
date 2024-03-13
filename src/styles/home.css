@@ -1,1 +1,63 @@
+.home {
 
+}
+
+.home-reviews {
+    background-color: green;
+    color: black;
+    padding: 2rem 0;
+}
+
+.home-reviews__divider--short,
+.home-reviews__divider--long {
+    display: block;
+    height: 2px;
+    background-color: black;
+    content: '';
+    margin: .25rem auto;
+}
+
+.home-reviews__divider--long {
+    width: 8rem;
+}
+
+.home-reviews__divier--short {
+    width: 7rem;
+}
+
+.home-reviews__button-box {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Button styles in ./buttons.css */
+
+.home-reviews__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.home-reviews__card {   
+    height: 18rem;
+    width: 20rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.home-reviews__card--name {
+
+}
+
+.home-reviews__card--message {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}

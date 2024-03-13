@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+
 import reviews from '../data/reviews'
 
 import { FaStar } from "react-icons/fa";
@@ -5,6 +7,10 @@ import { FaStar } from "react-icons/fa";
 function Reviews() {
 
     const shuffledReviews = reviews.sort((a, b) => 0.5 - Math.random());
+
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0})
+      }, [])
 
     return(
         <div className='reviews'>
