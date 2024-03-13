@@ -158,12 +158,6 @@
     font-family: 'Helvetica';
 }
 
-@media (max-width: 1250px) {
-    .shop {
-        height: 100svh;
-    }
-  }
-
 #target-logo,
 #walmart-logo {
     position: absolute;

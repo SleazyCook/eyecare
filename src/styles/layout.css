@@ -110,7 +110,7 @@ a {
     background-color: #fff;
     border-radius: var(--border-radius);
     padding: 10px 20px;
-    width: 200px;
+    width: 150px;
 }
 
 .dropdown-menu::before{
