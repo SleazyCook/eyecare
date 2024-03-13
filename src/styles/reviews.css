@@ -1,0 +1,67 @@
+.reviews {
+    color: white;
+    background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(20, 25, 20, 0.5)),
+        url('https://i.imgur.com/Zd0WX8H.png');
+}
+
+.reviews__header {
+    font-family: var(--font-title);
+    text-align: center;
+    color: white;
+    padding: 1rem 0 3rem 0;
+}
+
+.reviews__header span {
+    display: block;
+}
+
+.reviews__header--primary {
+    font-size: 5rem;
+    letter-spacing: 5px;
+}
+
+.reviews__header--secondary {
+    font-size: 2rem;
+}
+
+/* Container */
+
+.reviews__container {
+    background-color: black;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 2px solid white;
+}
+
+.reviews__container::-webkit-scrollbar {
+    display: none;
+  }
+
+.reviews__card {
+    margin: 0 auto;
+    width: 80%;
+    padding: 1rem;
+    color: black;
+}
+
+.reviews__card-name {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    background-color: white;
+    width: fit-content;
+    padding: .5rem 3rem;
+    border-radius: 1rem 1rem 0 0;
+    margin-bottom: 0;
+    border-bottom: 2px solid black;
+}
+
+.reviews__card-message {
+    background-color: lightgrey;
+    padding: 2rem;
+    border-radius: 0 1rem 1rem 1rem;
+    font-size: 1.5rem;
+    text-align: justify;
+}

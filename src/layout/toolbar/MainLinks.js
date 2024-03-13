@@ -10,13 +10,18 @@ function MainLinks() {
         },
         {
             id: 2,
+            path: 'services',
+            name: 'Services'
+        },
+        {
+            id: 3,
             path: 'insurance',
             name: 'Insurance'
         },
         {
-            id: 3,
-            path: 'services',
-            name: 'Services'
+            id: 4,
+            path: 'reviews',
+            name: 'Reviews'
         }
     ]
 

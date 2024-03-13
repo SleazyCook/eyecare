@@ -1,19 +1,9 @@
 /* Overivew */
 .location-overview {
-    border: 2px solid black;
     color: white;
     padding-bottom: 2rem;
-}
-
-.location-overview__livingston {
-    color: white;
-    background-image: url('https://i.imgur.com/loCXOMS.png');
-    background: black;
-}
-
-.location-overview__new-caney {
-    background-image: url('https://i.imgur.com/KweTaJ4.png');
-    background: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+        url('https://i.imgur.com/Zd0WX8H.png');
 }
 
 .location-overview__flexbox {
@@ -31,8 +21,7 @@
 }
 
 .location-overview__header {
-    background-color: rgba(0,0,0,.5);
-    margin: 0rem 2rem;
+    margin: 0;
     padding: 1rem;
     border-radius: 5px;
     text-align: center;
@@ -54,7 +43,7 @@
 }
 
 .location-overview__header--primary {
-    font-size: 3.5rem;
+    font-size: 5rem;
 }
 
 .location-overview__header--x {
@@ -65,7 +54,7 @@
 .location-overview__header--secondary img {
     margin-top: .5rem;
     margin-left: .5rem;
-    height: 45px;
+    height: 60px;
     margin-bottom: .4rem;
 }
 
@@ -81,7 +70,7 @@
 /* Office */
 .office {
     background-color: lightgrey;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
     color: black;
     border: 2px solid lightgrey;
     position: relative;

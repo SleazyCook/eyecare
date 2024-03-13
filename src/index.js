@@ -9,6 +9,7 @@ import Insurance from './containers/Insurance'
 import Services from './containers/Services'
 import Livingston from './containers/locations/Livingston'
 import NewCaney from './containers/locations/NewCaney'
+import Reviews from './containers/Reviews'
 
 const appElement = document.getElementById('app')
 const root = createRoot(appElement)
@@ -24,12 +25,12 @@ export const router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: 'insurance',
-                element: <Insurance />
-            },
-            {
                 path: 'services',
                 element: <Services />
+            },
+            {
+                path: 'insurance',
+                element: <Insurance />
             },
             {
                 path: 'locations/livingston',
@@ -38,6 +39,10 @@ export const router = createBrowserRouter([
             {
                 path: 'locations/new-caney',
                 element: <NewCaney />
+            },
+            {
+                path: 'reviews',
+                element: <Reviews />
             }
         ]
     }

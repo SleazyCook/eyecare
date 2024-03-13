@@ -41,22 +41,27 @@ function Office() {
                         {location.pathname === '/locations/livingston' ?
                             <>
                                 <LivingstonHours />
-                                <a className='button__office-schedule' 
-                                    href={location.pathname === '/locations/livingston' ? 
-                                        'https://drewford.dev' 
-                                        :'https://drewford.dev'} target='_blank'>
-                                        Schedule Appointment
-                                </a>
+                                <div className='button-box button-box--office'>
+                                    <a className='button__office-schedule' 
+                                        href={location.pathname === '/locations/livingston' ? 
+                                            'https://drewford.dev' 
+                                            :'https://drewford.dev'} target='_blank'>
+                                            Schedule Appointment
+                                    </a>
+                                </div>
+                                
                             </>
                             :
                             <>
                                 <NewCaneyHours />
-                                <a className='button__office-schedule' 
-                                    href={location.pathname === '/locations/livingston' ? 
-                                        'https://drewford.dev' 
-                                        :'https://drewford.dev'} target='_blank'>
-                                        Schedule Appointment
-                                </a>
+                                <div className='button-box button-box--office' id='button-box--ofice'>
+                                    <a className='button__office-schedule' 
+                                        href={location.pathname === '/locations/livingston' ? 
+                                            'https://drewford.dev' 
+                                            :'https://drewford.dev'} target='_blank'>
+                                            Schedule Appointment
+                                    </a>
+                                </div>
                             </>
                         }
 
