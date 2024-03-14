@@ -23,7 +23,7 @@ function ScheduleAppt() {
 
     return(
         <div className='menu-container' ref={menuRef}>
-            <div className='menu-trigger' onClick={()=>{setOpen(!open)}}>
+            <div className={open ? 'menu-trigger menu-trigger--open' : 'menu-trigger'} onClick={()=>{setOpen(!open)}}>
                 Schedule Appointment  <IoMdArrowDropdown />
             </div>
             <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >

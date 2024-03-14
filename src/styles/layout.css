@@ -66,8 +66,8 @@
     color: black;
 }
 
-.toolbar__mainlinks {
-
+.toolbar__mainlinks--button:hover {
+    text-decoration: underline;
 }
 
 .toolbar__mainlinks--button {
@@ -102,6 +102,11 @@ a {
 .menu-trigger {
     cursor: pointer;
     display: flex;
+}
+
+.menu-trigger:hover,
+.menu-trigger--open {
+    text-decoration: underline;
 }
 
 .dropdown-menu{
