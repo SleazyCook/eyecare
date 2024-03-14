@@ -24,8 +24,9 @@
 }
 
 .home-reviews--stars {
-    /* font-size: 1rem;
-     */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-reviews__divider--short,
