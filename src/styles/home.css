@@ -2,27 +2,54 @@
 
 }
 
+/* Reviews Preview */
+
 .home-reviews {
     background-color: green;
+
+    background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(20, 25, 20, 0.5)),
+        url('https://i.imgur.com/KLJJmOL.png');
+
     color: black;
     padding: 2rem 0;
+}
+
+.home-reviews h2 {
+    color: white;
+}
+
+.home-reviews--title,
+.home-reviews--stars {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+
+.home-reviews--stars {
+    /* font-size: 1rem;
+     */
 }
 
 .home-reviews__divider--short,
 .home-reviews__divider--long {
     display: block;
     height: 2px;
-    background-color: black;
+    background-color: white;
     content: '';
     margin: .25rem auto;
 }
 
 .home-reviews__divider--long {
-    width: 8rem;
+    width: 15rem;
 }
 
-.home-reviews__divier--short {
+/* .home-reviews__divider--short {
     width: 7rem;
+} */
+
+.home-reviews__divider--long:last-of-type {
+    margin-bottom: 1rem;
 }
 
 .home-reviews__button-box {

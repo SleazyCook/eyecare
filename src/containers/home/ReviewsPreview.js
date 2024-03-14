@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 import reviews from "../../data/reviews";
 
-import { FaStar } from "react-icons/fa";
+import { IoStar } from "react-icons/io5";
 
 function ReviewsPreview() {
 
@@ -12,14 +12,14 @@ function ReviewsPreview() {
     return(
         <div className='home-reviews'>
             <h2 className='center-text'>
-                <span>Reviews</span>
+                <span className='home-reviews--title'>Reviews</span>
                 <span className='home-reviews__divider--long'></span>
-                <span>
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
+                <span className='home-reviews--stars'>
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
                 </span>
                 <span className='home-reviews__divider--long'></span>
                 {/* Review button links */}
