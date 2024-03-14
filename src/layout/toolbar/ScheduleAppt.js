@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
-import { Link } from 'react-router-dom'
+
+import { IoMdArrowDropdown } from "react-icons/io";
 
 function ScheduleAppt() {
 
@@ -23,7 +24,7 @@ function ScheduleAppt() {
     return(
         <div className='menu-container' ref={menuRef}>
             <div className='menu-trigger' onClick={()=>{setOpen(!open)}}>
-                Schedule Appointment
+                Schedule Appointment  <IoMdArrowDropdown />
             </div>
             <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >
             <ul onClick={()=>{setOpen(!open)}}>

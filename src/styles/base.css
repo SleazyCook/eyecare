@@ -12,6 +12,7 @@
     --text-dark: black;
     /* Fonts */
     --font-title: 'Bebas Neue', sans-serif;
+    --font-h2: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --font-author: 'Berkshire Swash', serif;
     --font-sans: 'Lato', sans-serif;
     --font-serif: 'Caprasimo', serif;
@@ -42,4 +43,10 @@ body {
 /* utilities */
 .center-text {
     text-align: center;
+}
+
+/* Typography */
+
+h2 {
+    font-family: var(--font-h2);
 }

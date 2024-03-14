@@ -5,13 +5,10 @@
 /* Reviews Preview */
 
 .home-reviews {
-    background-color: green;
-
     background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(20, 25, 20, 0.5)),
         url('https://i.imgur.com/KLJJmOL.png');
-
-    color: black;
     padding: 2rem 0;
+    color: black;
 }
 
 .home-reviews h2 {
@@ -20,7 +17,7 @@
 
 .home-reviews--title,
 .home-reviews--stars {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: var(--font-h2);
     text-transform: uppercase;
     font-size: 3rem;
     letter-spacing: 5px;
@@ -44,9 +41,9 @@
     width: 15rem;
 }
 
-/* .home-reviews__divider--short {
-    width: 7rem;
-} */
+.home-reviews__divider--short {
+    background-color: black;
+}
 
 .home-reviews__divider--long:last-of-type {
     margin-bottom: 1rem;

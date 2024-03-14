@@ -8,7 +8,6 @@ function ReviewsPreview() {
 
     const shuffledHomeReviews = reviews.sort((a, b) => 0.5 - Math.random())
 
-
     return(
         <div className='home-reviews'>
             <h2 className='center-text'>

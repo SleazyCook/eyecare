@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 
+import { IoMdArrowDropdown } from "react-icons/io";
+
 function Locations() {
 
     const [open, setOpen] = useState(false)
@@ -23,7 +25,7 @@ function Locations() {
     return(
         <div className='menu-container' ref={menuRef}>
             <div className='menu-trigger' onClick={()=>{setOpen(!open)}}>
-                Locations
+                Locations <IoMdArrowDropdown />
             </div>
             <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >
             <ul onClick={()=>{setOpen(!open)}}>

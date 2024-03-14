@@ -101,6 +101,7 @@ a {
 
 .menu-trigger {
     cursor: pointer;
+    display: flex;
 }
 
 .dropdown-menu{
