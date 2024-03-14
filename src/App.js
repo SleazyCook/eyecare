@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router-dom';
+import ScrollToTop from "react-scroll-to-top";
 
 import './styles/base.css'
 import './styles/layout.css'
@@ -22,6 +23,7 @@ function App() {
             <Outlet context />
 
             <Footer />
+            <ScrollToTop smooth />
         </div>
     )
 }

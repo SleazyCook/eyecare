@@ -1,4 +1,11 @@
+import { useEffect } from 'react'
+
 function Insurance() {
+
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0})
+      }, [])
+      
     return(
         <div className='insurance'>
             <div className='insurance__header'>

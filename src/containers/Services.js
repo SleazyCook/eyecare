@@ -1,4 +1,11 @@
+import { useEffect } from 'react'
+
 function Services() {
+
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0})
+      }, [])
+      
     return(
         <div className='services'>
             <div className='services__header'>

@@ -37,7 +37,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 2rem;
     flex-wrap: wrap;
 
@@ -50,6 +50,13 @@
     padding: 1rem;
     background-color: white;
     border-radius: 2px;
+    box-shadow: 0 1.5rem 2rem black;
+    transition: all .5s;
+    cursor: default;
+}
+
+.home-reviews__card:hover {
+    transform: translateY(-8px);
 }
 
 .home-reviews__card--name {
