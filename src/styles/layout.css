@@ -64,15 +64,17 @@
     gap: 1rem;
     cursor: pointer;
     color: black;
-}
 
-.toolbar__mainlinks--button:hover {
-    text-decoration: underline;
 }
 
 .toolbar__mainlinks--button {
     color: black;
     text-decoration: none;
+    transition: all .2s;
+}
+
+.toolbar__mainlinks--button:hover {
+    text-decoration: underline;
 }
 
 /* Dropdown Menu Items*/
