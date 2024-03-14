@@ -33,8 +33,16 @@ function ReviewsPreview() {
                 {shuffledHomeReviews.slice(0, 3).map((review)=> {
                     return(
                         <div className='home-reviews__card' key='review.id'>
-                            <div className='home-reviews__card--name'>
+                            <div className='home-reviews__card--flex'>
+                                <div className='home-reviews__card--name'>
                                 {review.name}</div>
+                                <span>                    
+                                    <IoStar />
+                                    <IoStar />
+                                    <IoStar />
+                                    <IoStar />
+                                    <IoStar /></span>
+                            </div>
                             <span className='home-reviews__divider--short'></span>
                             <div className='home-reviews__card--message'>
                                 {review.message.length > 350 ?

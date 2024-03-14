@@ -84,7 +84,13 @@
 }
 
 .home-reviews__card--name {
+    font-size: 1.25rem;
+}
 
+.home-reviews__card--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .home-reviews__card--message {
